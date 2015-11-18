@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96d5bfc3-2216-4fbd-94f9-a0be3da88dba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Final Project (ICS 415)/Forms.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Final Project (ICS 415)/ForumPage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Final Project (ICS 415)/Home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final Project (ICS 415)/Forms.html" afterPath="$PROJECT_DIR$/Final Project (ICS 415)/Forms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final Project (ICS 415)/ForumPage.html" afterPath="$PROJECT_DIR$/Final Project (ICS 415)/ForumPage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final Project (ICS 415)/Home.html" afterPath="$PROJECT_DIR$/Final Project (ICS 415)/Home.html" />
     </list>
     <ignored path="ClassForum.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Home.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Final Project (ICS 415)/Home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7680723">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -40,18 +40,18 @@
       <file leaf-file-name="Forms.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Final Project (ICS 415)/Forms.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.041666">
-              <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+            <state vertical-scroll-proportion="-17.666666">
+              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForumPage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ForumPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Final Project (ICS 415)/ForumPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.090361446">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            <state vertical-scroll-proportion="-13.916667">
+              <caret line="33" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -77,9 +77,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Final Project (ICS 415)/Home.html" />
-        <option value="$PROJECT_DIR$/Final Project (ICS 415)/Forms.html" />
         <option value="$PROJECT_DIR$/Final Project (ICS 415)/ForumPage.html" />
+        <option value="$PROJECT_DIR$/Final Project (ICS 415)/Forms.html" />
+        <option value="$PROJECT_DIR$/Final Project (ICS 415)/Home.html" />
       </list>
     </option>
   </component>
@@ -334,6 +334,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
@@ -375,26 +381,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Final Project (ICS 415)/Home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Final Project (ICS 415)/Forms.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.041666">
-          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        <state vertical-scroll-proportion="-17.666666">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Final Project (ICS 415)/ForumPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.090361446">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        <state vertical-scroll-proportion="-13.916667">
+          <caret line="33" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final Project (ICS 415)/Home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7680723">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
           <folding />
         </state>
       </provider>

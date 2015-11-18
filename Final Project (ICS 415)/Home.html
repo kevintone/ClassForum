@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        table, td, tr{
+            border: black 1px solid;
+        }
+        table{
+            width:100%;
+        }
+        .center{
+            text-align:center;
+        }
+
+        div.box {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
     <meta charset="UTF-8">
-    <title>Final Project</title>
+    <title>Alpha Forum Page</title>
 </head>
 <body>
+<table>
+    <tr>
+        <th>
+            <div class="center">HomePage
+                <form>
+                    Email:<input type="text" name="email">
+                    Password:<input type="text" name="password">
+                    <input type="submit" value="Log In">
+                    <a href="Forms.html">Create Account</a>
+                </form>
+            </div>
+        </th>
+    </tr>
 
+    <tr>
+        <td><a href="ForumPage.html">Forums</a></td>
+        <td><a href="">Meetups</a></td>
+        <td><a href="">FAQ<a/></td>
+    </tr>
 
-
+    <tr>
+        <td><div class="box">About Us Information</div></td>
+    </tr>
+</table>
 </body>
 </html>
