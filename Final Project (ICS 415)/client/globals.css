@@ -4,4 +4,48 @@
 *
 */
 
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.header {
+    text-align: center;
+    height: 20%;
+}
+
+.footer {
+    height: 15%;
+}
+
+.displayBox {
+    display: block;
+    padding: 7px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    height: 100px;
+}
+
+.firstRow {
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+#firstRow {
+    border-top: 1px solid black;
+}
+
+.lastRow {
+    border-bottom: 1px solid black;
+}
+
+#lastRow {
+    border-bottom: 1px solid black;
+}
+
+#mainSection {
+    height: 75%;
+}
 
