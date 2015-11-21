@@ -23,7 +23,13 @@ body{
 
 .nav-basic {
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
     height: 50px;
+}
+
+.navbar-collapse {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .footer {
