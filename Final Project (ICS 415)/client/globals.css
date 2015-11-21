@@ -19,7 +19,6 @@ body{
 .header {
     padding-top: 10px;
     height: 100px;
-    border-bottom: 1px solid black;
 }
 
 .nav-basic {
@@ -28,17 +27,18 @@ body{
     height: 50px;
 }
 
+.navbar-collapse {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
 .footer {
     height: 15%;
 }
 
-h3{
-    color: red;
-}
-
 .displayBox {
     display: block;
-    padding: 4px;
+    padding: 7px;
     margin-bottom: 30px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
