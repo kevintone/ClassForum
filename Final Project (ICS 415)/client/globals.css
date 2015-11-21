@@ -4,6 +4,12 @@
 *
 */
 
+
+
+body{
+    height: 100%;
+}
+
 .container {
     height: 100%;
     width: 100%;
@@ -11,12 +17,13 @@
 }
 
 .header {
-    text-align: center;
-    height: 20%;
+    padding-top: 10px;
+    height: 100px;
 }
 
-.navbar-basic {
-
+.nav-basic {
+    border-top: 1px solid black;
+    height: 50px;
 }
 
 .footer {
