@@ -13,12 +13,13 @@ body{
 .container {
     height: 100%;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: #E0F7FA;
 }
 
 .header {
     padding-top: 10px;
     height: 100px;
+    background-color: #B2EBF2;
 }
 
 .nav-basic {
@@ -43,6 +44,10 @@ body{
     background-color: #ffffff;
     border: 1px solid #dddddd;
     height: 100px;
+}
+
+.ForumDisplayBoxColor{
+    background-color: #80DEEA;
 }
 
 .firstRow {
