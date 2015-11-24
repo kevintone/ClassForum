@@ -41,7 +41,8 @@ p{
 }
 
 .footer {
-    height: 15%;
+    height: 50px;
+    padding-top:20px;
 }
 
 .displayBox {
@@ -50,7 +51,7 @@ p{
     margin-bottom: 30px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
-    height: 100px;
+    height: 120px;
 }
 
 .firstRow {
@@ -59,7 +60,7 @@ p{
 }
 
 #firstRow {
-    border-top: 1px solid black;
+
 }
 
 .lastRow {

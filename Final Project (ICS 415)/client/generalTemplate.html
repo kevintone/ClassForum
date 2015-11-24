@@ -2,28 +2,39 @@
     <div class="general">
         <!-- <div class="navbar navbar-default navbar-fixed-top" role="navigation"> -->
         <div class="container">
-
-
             <div class="row">
-                <div class="col-md-3">
-
+                <div class="col-md-12">
+                    <h2>ICS 415 | General Discussion</h2>
                 </div>
+            </div>
 
-                <div class="col-md-9">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+            <div class="row" style="border-bottom: 1px solid gray;">
+                <form class="newTopic">
+                    <input type="button" value="New Topic">
+                </form>
+            </div>
+            <br>
+            <br>
+            <!--Where Posts Will Go -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="post-wrapper">
+                        {{> postTemplate}}
+
+                    </div>
                 </div>
-
             </div>
 
 
-            <div class="row">
+            <!-- Footer-->
+            <div class="row" style="border-top:1px solid black;">
                 <div class="col-md-12">
-                    <div class="footer">
-                        <a href="#">Back To Top</a>
+                    <div class="footer" style="text-align: center;">
+                        <span style="float:left;">
+                            <a href="/generalDiscussions">Back To Top</a>
+                        </span>
+                        Made By: Alfred Chan and Kevin Tone
+
                     </div>
                 </div>
             </div>
