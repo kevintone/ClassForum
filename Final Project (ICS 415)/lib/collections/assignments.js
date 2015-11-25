@@ -7,7 +7,7 @@
 //Assignments = new Mongo.Collection("assignments");
 
 //Creates a Database for
-//Meetups = new Mongo.Collection("meetups");
+Meetups = new Mongo.Collection("meets");
 
 //Create database for
 Posts = new Mongo.Collection("posts");

@@ -32,3 +32,6 @@ Router.route('/schedule', function() {
     title: "ICS 415 | Schedule"
 });
 
+Router.route('/meetups', function() {
+    this.render('meetupTemplate')
+});
