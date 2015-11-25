@@ -15,7 +15,6 @@
             {{/if}}
 
             <br>
-            <br>
             <!--Where Posts Will Go -->
             <div class="row">
                 <div class="col-md-12">
@@ -46,13 +45,19 @@
 </template>
 
 <template name="postTemplate">
-    <ul>
+    <div class="container">
         {{#each posts}}
-            <li>
-                <h4>{{title}}</h4>
-                <p><em>Posted By: {{username}}</em></p>
-
-            </li>
+          <div class="row" style="border-bottom: 1px solid gray;">
+              <div class="col-md-12">
+                  <a href="#">
+                      <h4> {{title}} </h4>
+                      <p><em>Posted By: {{username}} at {{date}}</em></p>
+                  </a>
+              </div>
+          </div>
         {{/each}}
-    </ul>
+
+        <br>
+        <br>
+    </div>
 </template>

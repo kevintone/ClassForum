@@ -14,6 +14,11 @@ if (Meteor.isClient) {
     });
 }
 
+Template.forumHeader.helpers({
+    title: function(){
+        return Router.current().route.options.title;
+    }
+})
 
 Template.postTemplate.helpers({
     posts: Posts.find({})
@@ -30,6 +35,7 @@ Template.createPost.events({
         event.preventDefault();
         var title = $('#postTitle').val();
         var body = $('#postBody').val();
+        var currentDate = new Date();
 
         if(title == '' || body == '') {
 
@@ -37,6 +43,7 @@ Template.createPost.events({
             Posts.insert({
                 title: title,
                 username: Meteor.user().username,
+                date: moment(currentDate).format('dddd, MMMM Do YYYY, h:mm:ss a'),
                 body: body
             });
         }
