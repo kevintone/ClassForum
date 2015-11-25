@@ -21,13 +21,14 @@ p{
 .container {
     height: 100%;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: #80DEEA;
 }
 
 .header {
     padding-top: 60px;
     padding-left: 50px;
     height: 100px;
+    background-color: #0097A7;
 }
 
 .nav-basic {
@@ -53,6 +54,10 @@ p{
     background-color: #ffffff;
     border: 1px solid #dddddd;
     height: 120px;
+}
+
+.forumSectionColor{
+    background-color: #0097A7;
 }
 
 .firstRow {

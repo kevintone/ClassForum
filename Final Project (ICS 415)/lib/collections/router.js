@@ -31,3 +31,4 @@ Router.route('/schedule', function() {
     this.render('scheduleTemplate')
     title: "ICS 415 | Schedule"
 });
+
