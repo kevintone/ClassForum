@@ -12,6 +12,7 @@
 //Create database for
 Posts = new Mongo.Collection("posts");
 
+
 //
 //Schedule = new Mongo.Collection("schedule");
 
@@ -22,17 +23,9 @@ if (Meteor.isServer) {
 
 
 if (Meteor.isClient) {
-    Template.posts.helper({
-        posts:function(){
+    /*Template.posts.helpers({
+        posts: function(){
             return Posts.find();
         }
-    });
+    });*/
 }
-
-Meteor.startup(function(){
-    if (Posts.find().count() === 0) {
-        for(var i = 0; i < 1; i++) {
-            Posts.insert({title: "A dummy post"});
-        }
-    }
-});

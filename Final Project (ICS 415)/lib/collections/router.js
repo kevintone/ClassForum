@@ -1,6 +1,4 @@
-/**
- * Created by Mianz on 11/22/15.
- */
+
 
 
 Router.configure({
@@ -17,14 +15,10 @@ Router.route('/index', function(){
 
 
 Router.route('/generalDiscussions', function(){
+    this.subscribe('posts');
     this.render('generalTemplate');
 });
 
-
-
-/*Router.map(function(){
-   this.route('About', {
-       path: '/'
-   })
-});*/
-
+Router.route('/createPost', function() {
+    this.render('createPost');
+});

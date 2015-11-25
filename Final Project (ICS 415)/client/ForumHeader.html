@@ -1,13 +1,7 @@
 <template name="forumHeader">
     <div class="header">
-        <span style="float: right;">
-            <form name="login">
-                Login:
-                <input type="text" value="username">
-                Password:
-                <input type="password" value="pwd">
-                <input type="submit" value="Submit">
-            </form>
+        <span style="float: left;">
+            {{> loginButtons}}
         </span>
 
     </div>

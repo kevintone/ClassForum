@@ -1,3 +1,21 @@
 <template name="createPost">
+    <div class="postForm" style="padding-top: 10px; padding-left: 100px;">
+        <form>
+            <label> Post Title:
+                <input type="text" style="width: 600px;" id="postTitle" />
+            </label>
+            <br>
 
+            <label>Body:</label>
+            <br>
+            <div style="padding-left:70px;">
+                <textarea id="postBody" style="height:300px; width: 600px; resize: none;"> </textarea>
+            </div>
+            <br>
+            <div style="padding-left:350px;">
+                <input type="submit" value="Post" id="submit"/>
+            </div>
+
+        </form>
+    </div>
 </template>

@@ -8,11 +8,12 @@
                 </div>
             </div>
 
-            <div class="row" style="border-bottom: 1px solid gray;">
-                <form class="newTopic">
-                    <input type="button" value="New Topic">
-                </form>
-            </div>
+            {{#if currentUser}}
+                {{> createPostTemplate}}
+            {{else}}
+                {{> notLoggedInTemplate}}
+            {{/if}}
+
             <br>
             <br>
             <!--Where Posts Will Go -->
@@ -42,4 +43,16 @@
         </div>
         <!-- </div> -->
     </div>
+</template>
+
+<template name="postTemplate">
+    <ul>
+        {{#each posts}}
+            <li>
+                <h4>{{title}}</h4>
+                <p><em>Posted By: {{username}}</em></p>
+
+            </li>
+        {{/each}}
+    </ul>
 </template>
