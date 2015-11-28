@@ -1,0 +1,41 @@
+<template name="createMeetup">
+    <div class="postForm" style="padding-top: 10px; padding-left: 100px;">
+        <form>
+            <label> Post Title:
+                <input type="text" style="width: 600px;" id="meetupTitle" />
+            </label>
+            <br>
+
+            <label>Purpose:
+            <div style="padding-left:70px;">
+                <textarea id="meetupBody" style="height:100px; width: 200px; resize: none;"> </textarea>
+            </div>
+            </label>
+            <br>
+
+            <label>Time:
+            <div style="padding-left:70px;">
+                <textarea id="meetupTime" style="height:30px; width: 100px; resize: none;"></textarea>
+            </div>
+            </label>
+            <br>
+
+            <label>Date (MM/DD/YY):</label>
+            <div style="padding-left:70px;">
+                <textarea id="meetupDate" style="height:30px; width: 100px; resize: none;"></textarea>
+            </div>
+            <br>
+
+            <label>Place:</label>
+            <div style="padding-left:70px;">
+                <textarea id="meetupPlace" style="height:60px; width: 300px; resize: none;"></textarea>
+            </div>
+            <br>
+
+            <div style="padding-left:350px;">
+                <input type="submit" value="meetupPost" id="submit"/>
+            </div>
+
+        </form>
+    </div>
+</template>

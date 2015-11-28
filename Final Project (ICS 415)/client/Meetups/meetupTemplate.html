@@ -1,0 +1,61 @@
+<template name="meetupTemplate">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Meetup lists</h2>
+            </div>
+        </div>
+
+        {{#if currentUser}}
+            {{> joinMeetupButton}} <!--This handle bar will create a meetup-->
+        {{else}}
+            {{> notLoggedInTemplate}} <!--This handle bar will say to login to create meet ups-->
+        {{/if}}
+
+        <br>
+        <!--Where meetupPosts Will Go -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="post-wrapper">
+                    {{> meetupPostTemplate}} <!--This handlebar will show hrefs to meetups-->
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer-->
+        <div class="row" style="border-top:1px solid black;">
+            <div class="col-md-12">
+                <div class="footer" style="text-align: center;">
+                        <span style="float:left;">
+                            <a href="/generalDiscussions">Back To Top</a>
+                        </span>
+                    Made By: Alfred Chan and Kevin Tone
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- </div> -->
+</template>
+
+
+<template name="meetupPostTemplate">
+    <div class="container">
+        {{#each posts}}
+        <div class="row" style="border-bottom: 1px solid gray;">
+            <div class="col-md-12">
+                <a href="#">
+                    <h4> {{title}} </h4>
+                    <p><em>Posted By: {{username}} at {{date}}</em></p>
+                </a>
+            </div>
+        </div>
+        {{/each}}
+
+        <br>
+        <br>
+    </div>
+</template>

@@ -56,3 +56,35 @@ Template.createPost.events({
         $('#postBody').val('');
     }
 });
+
+Template.createMeetup.events({
+    'click #submit': function(event) {
+        event.preventDefault();
+        var title = $('#meetupTitle').val();
+        var purpose = $('#meetupPurpose').val();
+        var time = $('#meetupTime').val();
+        var meetingDate = $('#meetupDate').val();
+        var place =$('#meetupPlace').val();
+        var currentDate = new Date();
+
+        if(title == '' || purpose == '' || time == ''|| place == '') {
+
+        } else {
+            Meetups.insert({
+                title: title,
+                username: Meteor.user().username,
+                meetingDate: meetingDate,
+                date: moment(currentDate).format('dddd, MMMM Do YYYY, h:mm:ss a'),
+                purpose:purpose,
+                time:time,
+                place:place,
+            });
+        }
+
+        $('#meetupTitle').val('');
+        $('#meetupPurpose').val('');
+        $('#meetupDate').val('');
+        $('#meetupTime').val('');
+        $('#meetupPlace').val('');
+    }
+});
