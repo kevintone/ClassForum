@@ -5,6 +5,7 @@ Router.configure({
     layoutTemplate: 'layout'
 });
 
+
 Router.route('/', function(){
     this.render('aboutTemplate');
     title: "ICS 415 | About"
@@ -32,13 +33,11 @@ Router.route('/schedule', function() {
     title: "ICS 415 | Schedule"
 });
 
-<<<<<<< Updated upstream
 Router.route('/meetups', function() {
     this.render('meetupTemplate')
-=======
+});
 
 Router.route('/meetup',function(){
    this.render('meetupTemplate');
    title: "ICS 415 | Meetups"
->>>>>>> Stashed changes
 });
