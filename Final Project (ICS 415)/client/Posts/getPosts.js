@@ -67,7 +67,7 @@ Template.createMeetupForm.events({
     'click #submit': function(event) {
         event.preventDefault();
         var title = $('#meetupTitle').val();
-        var purpose = $('#meetupPurpose').val();
+        var purpose = $('#meetupBody').val();
         var time = $('#meetupTime').val();
         var meetingDate = $('#meetupDate').val();
         var place =$('#meetupPlace').val();
@@ -81,7 +81,7 @@ Template.createMeetupForm.events({
                 username: Meteor.user().username,
                 meetingDate: meetingDate,
                 date: moment(currentDate).format('dddd, MMMM Do YYYY, h:mm:ss a'),
-                purpose:purpose,
+                purpose: purpose,
                 time:time,
                 place:place
             });
