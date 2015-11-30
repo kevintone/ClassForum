@@ -34,6 +34,12 @@ Template.generalTemplate.events({
     }
 });
 
+Template.meetupTemplate.events({
+   'click #createAMeetupButton': function() {
+       Router.go('/createMeetup')
+   }
+});
+
 Template.createPost.events({
     'click #submit': function(event) {
         event.preventDefault();
@@ -57,7 +63,7 @@ Template.createPost.events({
     }
 });
 
-Template.createMeetup.events({
+Template.createMeetupForm.events({
     'click #submit': function(event) {
         event.preventDefault();
         var title = $('#meetupTitle').val();
@@ -77,7 +83,7 @@ Template.createMeetup.events({
                 date: moment(currentDate).format('dddd, MMMM Do YYYY, h:mm:ss a'),
                 purpose:purpose,
                 time:time,
-                place:place,
+                place:place
             });
         }
 

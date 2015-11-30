@@ -32,13 +32,13 @@ Router.route('/schedule', function() {
     title: "ICS 415 | Schedule"
 });
 
-<<<<<<< Updated upstream
-Router.route('/meetups', function() {
-    this.render('meetupTemplate')
-=======
 
-Router.route('/meetup',function(){
+Router.route('/meetups',function(){
    this.render('meetupTemplate');
    title: "ICS 415 | Meetups"
->>>>>>> Stashed changes
+});
+
+Router.route('/createMeetup', function() {
+   this.render('createMeetupForm');
+    title: "ICS 415 | Create A Meetup"
 });

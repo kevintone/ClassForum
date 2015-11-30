@@ -2,27 +2,47 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Meetup lists</h2>
+                <h2>ICS 415 | Fall 2015 Meetups</h2>
             </div>
-        </div>
 
-        {{#if currentUser}}
-            {{> joinMeetupButton}} <!--This handle bar will create a meetup-->
-        {{else}}
-            {{> notLoggedInTemplate}} <!--This handle bar will say to login to create meet ups-->
-        {{/if}}
+            {{#if currentUser}}
+                {{> createMeetupButton}}
+            {{else}}
+                {{> notLoggedInMeetup}}
+            {{/if}}
+
+            <br>
+       </div>
 
         <br>
-        <!--Where meetupPosts Will Go -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="post-wrapper">
-                    {{> meetupPostTemplate}} <!--This handlebar will show hrefs to meetups-->
 
-                </div>
+        <div class="row" style="border-bottom: 1px solid black;">
+            <div class="col-md-2">
+                <h5>Title</h5>
+            </div>
+
+            <div class="col-md-2">
+                <h5>Purpose</h5>
+            </div>
+
+            <div class="col-md-2">
+                <h5>Time</h5>
+            </div>
+
+            <div class="col-md-2">
+                <h5>Date</h5>
+            </div>
+
+            <div class="col-md-2">
+                <h5>Location</h5>
+            </div>
+
+            <div class="col-md-2">
+                <h5>Signup</h5>
             </div>
         </div>
 
+        {{> getMeetups}}
 
         <!-- Footer-->
         <div class="row" style="border-top:1px solid black;">
@@ -37,25 +57,46 @@
             </div>
         </div>
 
+
     </div>
-    <!-- </div> -->
 </template>
 
-
-<template name="meetupPostTemplate">
-    <div class="container">
-        {{#each posts}}
+<template name="getMeetups">
+    {{#each meets}}
+        <br>
         <div class="row" style="border-bottom: 1px solid gray;">
-            <div class="col-md-12">
-                <a href="#">
-                    <h4> {{title}} </h4>
-                    <p><em>Posted By: {{username}} at {{date}}</em></p>
-                </a>
+            <div class="col-md-2">
+                {{title}}
             </div>
-        </div>
-        {{/each}}
 
+            <div class="col-md-2">
+                {{purpose}}
+            </div>
+
+            <div class="col-md-2">
+                {{time}}
+            </div>
+
+            <div class="col-md-2">
+                {{meetingDate}}
+            </div>
+
+            <div class="col-md-2">
+                {{place}}
+            </div>
+
+            <div class="col-md-2">
+                {{#if currentUser}}
+                    {{> joinMeetupButton}}
+                {{else}}
+                    {{> meetNonMember}}
+                {{/if}}
+            </div>
+            <br>
+        </div>
         <br>
-        <br>
-    </div>
+    {{/each}}
+
+    <br>
+    <br>
 </template>
