@@ -11,7 +11,7 @@ body{
 }
 
 h3{
-    color:red;
+    color:#00C19D;
 }
 
 p{
@@ -21,14 +21,15 @@ p{
 .container {
     height: 100%;
     width: 100%;
-    background-color: #80DEEA;
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#003ec7), to(#4685cd));
 }
+
 
 .header {
     padding-top: 60px;
     padding-left: 50px;
     height: 100px;
-    background-color: #0097A7;
+    background: -webkit-linear-gradient(top, #4685cd, #003ec7);;
 }
 
 .nav-basic {
@@ -51,13 +52,13 @@ p{
     display: block;
     padding: 7px;
     margin-bottom: 30px;
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
+    background: -webkit-radial-gradient(20% 35%, closest-side,#ee0c00, #2F2727);
+    /*border: 1px solid #dddddd;*/
     height: 120px;
 }
 
 .forumSectionColor{
-    background-color: #0097A7;
+    background-color:  #003ec7;
 }
 
 .firstRow {
@@ -85,3 +86,32 @@ p{
     background-color: papayawhip;
 }
 
+/*HamburgerIcon*/
+.hamburger-menu
+{
+    width:30px;
+    height:5px;
+    background-color:#111;
+    border-radius:5px;
+    float:right;
+}
+
+.hamburger-menu:after, .hamburger-menu:before
+{
+    content: '';
+    width: 30px;
+    height:5px;
+    background-color:#2962FF;
+    position: relative;
+    border-radius:5px;
+}
+
+.hamburger-menu:after
+{
+    top:10px;
+}
+
+.hamburger-menu:before
+{
+    top:20px;
+}
