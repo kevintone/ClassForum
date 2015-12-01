@@ -1,4 +1,5 @@
 <template name="layout">
+
     <div class="navContainer">
         {{> navbar }}
 
@@ -8,7 +9,7 @@
 
 
 
-<template name='navbar'>
+<template name="navbar">
     <div style="background-color:#c8d4da">
         <div class="row">
             <div class="col-md-12">
@@ -22,9 +23,8 @@
                 <!--  Display three horizontal lines when navbar collapsed. -->
                 <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"> ICS 415</a>
+            <a class="navbar-brand" href="/">ICS 415</a>
         </div>
-
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/index">Forums</a></li>
@@ -34,5 +34,6 @@
             </ul>
             <div class="hamburger-menu" align="right"></div>
         </div>
+
     </div>
 </template>

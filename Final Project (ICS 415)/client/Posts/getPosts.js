@@ -21,11 +21,11 @@ Template.forumHeader.helpers({
 });
 
 Template.postTemplate.helpers({
-    posts: Posts.find({})
+    posts: Posts.find({}, {sort: {date: -1}})
 });
 
 Template.getMeetups.helpers({
-    meets: Meetups.find({})
+    meets: Meetups.find({}, {sort: {meetingDate: -1}})
 });
 
 Template.generalTemplate.events({
