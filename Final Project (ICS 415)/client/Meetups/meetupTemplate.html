@@ -16,7 +16,7 @@
 
         <br>
 
-        <div class="row" style="padding-left: 10px; border-bottom: 1px solid black;">
+        <div class="row" style="padding-left: 10px; padding-right:10px; border-bottom: 1px solid black;">
             <div class="col-md-2">
                 <h5>Title</h5>
             </div>
@@ -37,7 +37,10 @@
                 <h5>Location</h5>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-1">
+                <h5>Number Of People Coming</h5>
+            </div>
+            <div class="col-md-1">
                 <h5>Signup</h5>
             </div>
         </div>
@@ -49,7 +52,7 @@
             <div class="col-md-12">
                 <div class="footer" style="text-align: center;">
                         <span style="float:left;">
-                            <a href="/generalDiscussions">Back To Top</a>
+                            <a href="/meetups">Back To Top</a>
                         </span>
                     Made By: Alfred Chan and Kevin Tone
 
@@ -64,7 +67,7 @@
 <template name="getMeetups">
     {{#each meets}}
         <br>
-        <div class="row" style="padding-left: 10px; border-bottom: 1px solid gray;">
+        <div class="row" style="padding-left: 10px; padding-right:10px; border-bottom: 1px solid gray;">
             <div class="col-md-2">
                 {{title}}
             </div>
@@ -85,7 +88,11 @@
                 {{place}}
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-1">
+                {{number}}
+            </div>
+
+            <div class="col-md-1" id="numMeetupPeople">
                 {{#if currentUser}}
                     {{> joinMeetupButton}}
                 {{else}}

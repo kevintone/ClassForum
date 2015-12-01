@@ -72,6 +72,7 @@ Template.createMeetupForm.events({
         var meetingDate = $('#meetupDate').val();
         var place =$('#meetupPlace').val();
         var currentDate = new Date();
+        var defaultOne = 1;
 
         if(title == '' || purpose == '' || time == ''|| place == '') {
 
@@ -83,14 +84,31 @@ Template.createMeetupForm.events({
                 date: moment(currentDate).format('dddd, MMMM Do YYYY, h:mm:ss a'),
                 purpose: purpose,
                 time:time,
+                number: defaultOne,
                 place:place
             });
         }
 
         $('#meetupTitle').val('');
+        $('#meetupBody').val('');
         $('#meetupPurpose').val('');
         $('#meetupDate').val('');
         $('#meetupTime').val('');
         $('#meetupPlace').val('');
+    }
+});
+
+Template.getMeetups.events({
+    'mouseover #numMeetupPeople': function(event) {
+        var selected = this._id;
+        Session.set('selectedMeetup', selected);
+    },
+
+});
+
+Template.joinMeetupButton.events({
+    'click #joinMeetup': function(event) {
+        // var selectedMeet = Session.get('selectedMeetup');
+        Meetups.update(Session.get('selectedMeetup'), {$inc: {number:1}});
     }
 });
