@@ -56,10 +56,15 @@ Template.createPost.events({
                 date: moment(currentDate).format('dddd, MMMM Do YYYY, h:mm:ss a'),
                 body: body
             });
+
+            $('#postTitle').val('');
+            $('#postBody').val('');
+
+            Router.go('/generalDiscussions')
         }
 
-        $('#postTitle').val('');
-        $('#postBody').val('');
+
+
     }
 });
 
@@ -87,6 +92,7 @@ Template.createMeetupForm.events({
                 number: defaultOne,
                 place:place
             });
+
         }
 
         $('#meetupTitle').val('');
@@ -95,6 +101,8 @@ Template.createMeetupForm.events({
         $('#meetupDate').val('');
         $('#meetupTime').val('');
         $('#meetupPlace').val('');
+
+        Router.go('/meetups')
     }
 });
 
