@@ -57,6 +57,15 @@ p{
     height: 120px;
 }
 
+.postDisplay {
+    display: block;
+    border: 1px solid gray;
+    background-color: bisque;
+    margin: 10px;
+    padding-top:5px;
+
+}
+
 .forumSectionColor{
     background-color:  #003ec7;
 }
