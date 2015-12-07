@@ -4,14 +4,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>ICS 415 | General Discussion</h2>
+                    <h2 style="color:whitesmoke">ICS 415 | General Discussion</h2>
                 </div>
             </div>
 
             {{#if currentUser}}
-                {{> createPostTemplate}}
+            {{> createPostTemplate}}
             {{else}}
-                {{> notLoggedInTemplate}}
+            {{> notLoggedInTemplate}}
             {{/if}}
 
             <br>
@@ -29,7 +29,7 @@
             <!-- Footer-->
             <div class="row" style="border-top:1px solid black;">
                 <div class="col-md-12">
-                    <div class="footer" style="text-align: center;">
+                    <div class="footer" style="text-align: center;color:whitesmoke">
                         <span style="float:left;">
                             <a href="/generalDiscussions">Back To Top</a>
                         </span>
@@ -47,14 +47,14 @@
 <template name="postTemplate">
     <div class="container">
         {{#each posts}}
-          <div class="row postDisplay">
-              <div class="col-md-12">
-                  <a href="#">
-                      <h4> {{title}} </h4>
-                      <p><em>Posted By: {{username}} at {{date}}</em></p>
-                  </a>
-              </div>
-          </div>
+        <div class="row postDisplay">
+            <div class="col-md-12">
+                <a href="#">
+                    <h4> {{title}} </h4>
+                    <p><em>Posted By: {{username}} at {{date}}</em></p>
+                </a>
+            </div>
+        </div>
         {{/each}}
 
         <br>
