@@ -25,7 +25,7 @@ Template.postTemplate.helpers({
 });
 
 Template.getMeetups.helpers({
-    meets: Meetups.find({}, {sort: {meetingDate: -1}})
+    meets: Meetups.find({})
 });
 
 Template.generalTemplate.events({
@@ -107,7 +107,7 @@ Template.createMeetupForm.events({
 });
 
 Template.getMeetups.events({
-    'mouseover #numMeetupPeople': function(event) {
+    'mouseover #joinMeetup': function(event) {
         var selected = this._id;
         Session.set('selectedMeetup', selected);
     },
